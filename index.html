@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="FakeOut: Leveraging Out-of-domain Self-supervision for Multi-modal Video Deepfake Detection.">
+  <meta name="keywords" content="FakeOut, Deepfake, Multi-Modal, Gili Knafo, Gil, Gili, Knafo, MultiModal, Representation Learning, Self Supervision, Self Supervised">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FakeOut: Leveraging Out-of-domain Self-supervision for Multi-modal Video Deepfake Detection</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/fakeout_logo_square.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+<p></p>
+<div align="center">
+<img src="./static/images/fakeout_logo.svg" alt="logo" width=500></img>
+</div>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">FakeOut: Leveraging Out-of-domain Self-supervision for Multi-modal Video Deepfake Detection</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://keunhong.com">Gil Knafo</a><sup>1</sup>,
+			</span>
+            <span class="author-block">
+              <a href="http://www.ricardomartinbrualla.com">Ohad Fried</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Reichman University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2212.00773"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2212.00773"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/gilikn/fakeout"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Video synthesis methods rapidly improved in recent years, allowing easy creation of synthetic humans. This poses a problem, especially in the era of social media, as synthetic videos of speaking humans can be used to spread misinformation in a convincing manner. 
+			Thus, there is a pressing need for accurate and robust deepfake detection methods, that can detect forgery techniques not seen during training. 
+          </p>
+          <p>
+            In this work, we explore whether this can be done by leveraging a multi-modal, out-of-domain backbone trained in a self-supervised manner, adapted to the video deepfake domain. 
+			We propose <i>FakeOut</i>; a novel approach that relies on multi-modal data throughout both the pre-training phase and the adaption phase. 
+			We demonstrate the efficacy and robustness of FakeOut in detecting various types of deepfakes, especially manipulations which were not seen during training. 
+			Our method achieves state-of-the-art results in cross-manipulation and cross-dataset generalization. 
+			This study shows that, perhaps surprisingly, training on out-of-domain videos (i.e., videos with no speaking humans), can lead to better deepfake detection systems. 
+			Code is available on GitHub.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{knafo2022fakeout,
+  title={FakeOut: Leveraging Out-of-domain Self-supervision for Multi-modal Video Deepfake Detection},
+  author = {Knafo, Gil and Fried, Ohad},
+  journal={arXiv preprint arXiv:2212.00773},
+  year={2022}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/pdf/2212.00773">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/gilikn/FakeOut" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
